@@ -1,309 +1,643 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Software Engineer Portfolio Home</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#137fec",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#101922",
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Software Engineer Portfolio Home</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
             },
-        }
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] dark:text-slate-50 transition-colors duration-300">
-<!-- Navigation Bar -->
-<header class="sticky top-0 z-50 w-full border-b border-[#e7edf3] dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-[1200px] mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="bg-primary text-white p-1.5 rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined text-2xl">terminal</span>
-</div>
-<h2 class="text-lg font-bold tracking-tight">Alex.Dev</h2>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#work">Work</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform active:scale-95">
-                    Let's Talk
-                </button>
-</div>
-</div>
-</header>
-<main class="max-w-[1200px] mx-auto px-6 lg:px-10">
-<!-- Hero Section -->
-<section class="py-16 md:py-24 @container" id="about">
-<div class="flex flex-col gap-10 @[864px]:flex-row @[864px]:items-center">
-<div class="flex-1 flex flex-col gap-8">
-<div class="space-y-4">
-<span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">Available for new opportunities</span>
-<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-[-0.03em] dark:text-white">
-                            Building Scalable Solutions through <span class="text-primary">Code</span> &amp; Creativity.
-                        </h1>
-<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-                            I am a senior software engineer specializing in high-performance web applications and cloud architecture. I bridge the gap between complex backend systems and seamless user experiences.
-                        </p>
-</div>
-<div class="flex flex-wrap gap-4">
-<button class="flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold transition-all hover:shadow-lg hover:shadow-primary/20">
-<span>View My Work</span>
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-<button class="flex items-center justify-center gap-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
-<span class="material-symbols-outlined">download</span>
-<span>Download CV</span>
-</button>
-</div>
-<div class="flex items-center gap-6 pt-4 text-slate-500">
-<div class="flex items-center gap-2">
-<span class="font-bold text-xl dark:text-white">8+</span>
-<span class="text-sm">Years Exp.</span>
-</div>
-<div class="w-px h-8 bg-slate-200 dark:bg-slate-700"></div>
-<div class="flex items-center gap-2">
-<span class="font-bold text-xl dark:text-white">50+</span>
-<span class="text-sm">Projects Delivered</span>
-</div>
-</div>
-</div>
-<div class="flex-1">
-<div class="relative">
-<div class="absolute -top-4 -right-4 w-full h-full border-2 border-primary rounded-xl -z-10"></div>
-<div class="w-full aspect-[4/5] bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden shadow-2xl bg-cover bg-center" data-alt="Professional headshot of a software engineer in a clean setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1eWJRnrv_dVU2irG7i-V7uwoIpepLvdHcKvI-7C71IQEUI04W654y7UzTjNsoy-fS9x3GLfIbaKAl3ia27jGEuAgXARtPUA7v2U0A1HNoSZldNGmAEdl-MdkVuPTgkLTfpCFpmRSB-SSi-GQT7C1oYaDsxWDjj2KuGWYXXEDrf-oHy6It_qAC31KAQWSO4MB-OrtPk2L8EBq_N8QTO8t6YxJB5Lwr9LNHMbAaJAPCOoFrfexlmL51092TrpNckZqN1-Un8ZoTe10');">
-</div>
-<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-xl flex items-center gap-4">
-<div class="size-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-500">
-<span class="material-symbols-outlined">verified</span>
-</div>
-<div>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Expertise</p>
-<p class="font-bold">Full Stack Architecture</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Projects Header -->
-<section class="pt-20 pb-10" id="work">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 px-4">
-<div class="space-y-2">
-<h2 class="text-3xl font-bold tracking-tight">Featured Projects</h2>
-<p class="text-slate-500 dark:text-slate-400">A selection of recent technical challenges I've solved.</p>
-</div>
-<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
-                    Browse Portfolio <span class="material-symbols-outlined">open_in_new</span>
-</a>
-</div>
-<!-- Projects Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 mt-8">
-<!-- Project Card 1 -->
-<div class="group flex flex-col gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all">
-<div class="w-full aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg overflow-hidden relative" data-alt="Screenshot of an e-commerce platform interface">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors"></div>
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSW0Y3hV3GYqmtj1eWLbBdL2Pc8O-n-QHbOCQEu8JlkzmO8reKGiKZkeYDyGNiSJ2DInbvvc_Agc8HiYKRq-sAN_-uXFA4wlXeD8bD38CGcThF2-MyQtsvibG3QdFBYtpOazqUkY9aK0OJ3NtBuQhH70ngXZs1loI26m3afpwF25bVKmBc-66QothC5Kzb3sR_7MW3kON50WT1E0NcflMSInUx7lufEOONheQrujqX-BukAxEBgAGfSwymP85fKpOE3pvElCS1_gA');"></div>
-</div>
-<div class="space-y-3 px-2">
-<div class="flex flex-wrap gap-2">
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">React</span>
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">Node.js</span>
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">AWS</span>
-</div>
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">E-commerce Cloud Engine</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                            Scalable headless commerce solution processing over 10k requests/sec with real-time inventory synchronization.
-                        </p>
-</div>
-</div>
-<!-- Project Card 2 -->
-<div class="group flex flex-col gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all">
-<div class="w-full aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg overflow-hidden relative" data-alt="Data visualization dashboard with complex charts">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors"></div>
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD3yZNnhpJ91w-YmHahJTFgtt77hbgXSCYjlZHe59MlPwI9zgNwY9mUpZ6o3f_ky2oTnwUr4AUIyw98H0BWN2hdHdbhBUBZbdgnN9frxuKImUGI1vI8H3I0oGUb-jtZb7LnKcUZ7QGBk9Pf2UTLhSWkwTF4VmYvL4L7P7QLX-en8LBx5BUmNF_lDLIdGxE8Wc_DRE8uwB624ps7aHFHHCnnvxcM857g1gof3AeVXYi-3rogLwfq7L5d3xr-mHWEB4mW4BCx5yktFY');"></div>
-</div>
-<div class="space-y-3 px-2">
-<div class="flex flex-wrap gap-2">
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">TypeScript</span>
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">D3.js</span>
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">Python</span>
-</div>
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Real-time Analytics Visualizer</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                            Interactive dashboard for streaming data with millisecond latency, serving enterprise-level infrastructure monitoring.
-                        </p>
-</div>
-</div>
-<!-- Project Card 3 -->
-<div class="group flex flex-col gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all">
-<div class="w-full aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg overflow-hidden relative" data-alt="Mobile banking application interface showing transaction history">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors"></div>
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGg5NTX7a65FoaZdN487VzAaonjxG7eFd2LWhy03028gJ22J8J1xraXRDft1WivO-u5uRM1_MXzOrbn27_cmdt29e-IavGNdWNa_pYz9czKBXNATRhdGMsZ1FOVaBLY57ZgJL7JhCadfGV5mHDKVL7Zq1g_YSUByR0pgLlRe3qjtxadKqLggAL-Wv65Bxs05_xi4fBafjlkpnIVQ_oBMz7ohULk5SBCkHIhxhMoBU-NPTFdKxiRqG0idhhqCnSa7DGTMnbfHT-r04');"></div>
-</div>
-<div class="space-y-3 px-2">
-<div class="flex flex-wrap gap-2">
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">Go</span>
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">PostgreSQL</span>
-<span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300">Docker</span>
-</div>
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Secure Fintech API</h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                            PCI-compliant microservices architecture for handling secure global payments and identity verification.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Technical Expertise Section -->
-<section class="py-20 bg-primary/5 rounded-3xl my-20 px-8" id="skills">
-<div class="text-center space-y-4 mb-16">
-<h2 class="text-3xl font-bold tracking-tight">Technical Expertise</h2>
-<p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-                    A deep dive into the technologies I use to build robust and scalable digital products.
-                </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Frontend -->
-<div class="space-y-6">
-<div class="flex items-center gap-4">
-<div class="size-12 rounded-xl bg-white dark:bg-slate-800 shadow-md flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">web</span>
-</div>
-<h3 class="text-xl font-bold">Frontend Dev</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> React / Next.js
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> TypeScript / JS (ES6+)
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> Tailwind CSS / SCSS
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> State Management (Redux/Zustand)
-                        </li>
-</ul>
-</div>
-<!-- Backend -->
-<div class="space-y-6">
-<div class="flex items-center gap-4">
-<div class="size-12 rounded-xl bg-white dark:bg-slate-800 shadow-md flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">database</span>
-</div>
-<h3 class="text-xl font-bold">Backend &amp; API</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> Node.js / Express
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> Python / Django
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> GraphQL / RESTful APIs
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> PostgreSQL / MongoDB / Redis
-                        </li>
-</ul>
-</div>
-<!-- Infrastructure -->
-<div class="space-y-6">
-<div class="flex items-center gap-4">
-<div class="size-12 rounded-xl bg-white dark:bg-slate-800 shadow-md flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">cloud</span>
-</div>
-<h3 class="text-xl font-bold">Cloud &amp; DevOps</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> AWS (S3, Lambda, EC2)
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> Docker &amp; Kubernetes
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> CI/CD (GitHub Actions/CircleCI)
-                        </li>
-<li class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
-<span class="size-1.5 rounded-full bg-primary"></span> Infrastructure as Code (Terraform)
-                        </li>
-</ul>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="pb-32" id="contact">
-<div class="relative overflow-hidden bg-[#0d141b] rounded-[2rem] p-8 md:p-16 flex flex-col items-center text-center gap-8">
-<!-- Abstract Background Elements -->
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -mr-32 -mt-32"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -ml-32 -mb-32"></div>
-<h2 class="text-3xl md:text-5xl font-bold text-white max-w-2xl leading-tight">
-                    Interested in starting a project together?
-                </h2>
-<p class="text-slate-400 max-w-xl text-lg">
-                    I'm currently accepting new projects and consulting engagements. Let's discuss how I can help you build something amazing.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4 w-full justify-center mt-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-primary/30">
-                        Get In Touch
-                    </button>
-<button class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg transition-all">
-                        Book a Discovery Call
-                    </button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark py-12">
-<div class="max-w-[1200px] mx-auto px-6 lg:px-10">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex items-center gap-3">
-<div class="bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white p-1.5 rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined text-xl">terminal</span>
-</div>
-<h2 class="text-lg font-bold tracking-tight">Alex.Dev</h2>
-</div>
-<div class="flex items-center gap-8">
-<a class="text-slate-500 hover:text-primary transition-colors font-medium" href="#">LinkedIn</a>
-<a class="text-slate-500 hover:text-primary transition-colors font-medium" href="#">GitHub</a>
-<a class="text-slate-500 hover:text-primary transition-colors font-medium" href="#">Twitter</a>
-<a class="text-slate-500 hover:text-primary transition-colors font-medium" href="#">Medium</a>
-</div>
-<p class="text-slate-400 text-sm">
-                    © 2024 Alex Dev. Built with passion &amp; precision.
-                </p>
-</div>
-</div>
-</footer>
-</body></html>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] dark:text-slate-50 transition-colors duration-300"
+  >
+    <!-- Navigation Bar -->
+    <header
+      class="sticky top-0 z-50 w-full border-b border-[#e7edf3] dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-6 lg:px-10 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="bg-primary text-white p-1.5 rounded-lg flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-2xl">terminal</span>
+          </div>
+          <h2 class="text-lg font-bold tracking-tight">Balakumar.Dev</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#work"
+            >Work</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#skills"
+            >Skills</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform active:scale-95"
+          >
+            Let's Talk
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-[1200px] mx-auto px-6 lg:px-10">
+      <!-- Hero Section -->
+      <section class="py-16 md:py-24 @container" id="about">
+        <div
+          class="flex flex-col gap-10 @[864px]:flex-row @[864px]:items-center"
+        >
+          <div class="flex-1 flex flex-col gap-8">
+            <div class="space-y-4">
+              <span
+                class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider"
+                >Available for new opportunities</span
+              >
+              <h1
+                class="text-4xl md:text-6xl font-black leading-tight tracking-[-0.03em] dark:text-white"
+              >
+                Building Scalable Solutions through
+                <span class="text-primary">Code</span> &amp; Creativity.
+              </h1>
+              <p
+                class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed"
+              >
+                I am a Lead software engineer specializing in high-performance
+                web applications and cloud architecture. I bridge the gap
+                between complex backend systems and seamless user
+                experiences.Proven expertise in designing microservices-based
+                architectures, leading full-stack teams, and building resilient,
+                cloud-native systems. Skilled in improving application
+                performance, resolving critical production issues, and mentoring
+                cross-functional teams to deliver under pressure.
+              </p>
+            </div>
+            <div class="flex items-center gap-6 pt-4 text-slate-500">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-xl dark:text-white">10+</span>
+                <span class="text-sm">Years Exp.</span>
+              </div>
+              <div class="w-px h-8 bg-slate-200 dark:bg-slate-700"></div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-xl dark:text-white">8+</span>
+                <span class="text-sm">Projects Delivered</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="relative">
+              <div
+                class="absolute -top-4 -right-4 w-full h-full border-2 border-primary rounded-xl -z-10"
+              ></div>
+              <div
+                class="w-full aspect-[4/5] bg-slate-200 dark:bg-slate-800 rounded-xl overflow-hidden shadow-2xl bg-cover bg-center"
+                data-alt="Professional headshot of a software engineer in a clean setting"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1eWJRnrv_dVU2irG7i-V7uwoIpepLvdHcKvI-7C71IQEUI04W654y7UzTjNsoy-fS9x3GLfIbaKAl3ia27jGEuAgXARtPUA7v2U0A1HNoSZldNGmAEdl-MdkVuPTgkLTfpCFpmRSB-SSi-GQT7C1oYaDsxWDjj2KuGWYXXEDrf-oHy6It_qAC31KAQWSO4MB-OrtPk2L8EBq_N8QTO8t6YxJB5Lwr9LNHMbAaJAPCOoFrfexlmL51092TrpNckZqN1-Un8ZoTe10');
+                "
+              ></div>
+              <div
+                class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-xl flex items-center gap-4"
+              >
+                <div
+                  class="size-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-500"
+                >
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                  <p
+                    class="text-xs text-slate-500 uppercase font-bold tracking-widest"
+                  >
+                    Expertise
+                  </p>
+                  <p class="font-bold">Lead - Full Stack Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Projects Header -->
+      <section class="pt-20 pb-10" id="work">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Left Column: Professional Journey (Timeline) -->
+          <div class="lg:col-span-7">
+            <div class="flex items-center gap-3 mb-8">
+              <span class="material-symbols-outlined text-primary">work</span>
+              <h2 class="text-2xl font-bold font-display">
+                Professional Journey
+              </h2>
+            </div>
+            <div class="relative">
+              <!-- Timeline Line -->
+              <div
+                class="absolute left-5 top-0 bottom-0 w-[2px] bg-[#cfdbe7] dark:bg-slate-800"
+              ></div>
+              <!-- Timeline Item 1 -->
+              <div class="relative pl-14 pb-12">
+                <div
+                  class="absolute left-0 top-1 size-10 rounded-full bg-white dark:bg-slate-900 border-2 border-primary flex items-center justify-center z-10"
+                >
+                  <span class="material-symbols-outlined text-primary text-xl"
+                    >rocket_launch</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-2"
+                  >
+                    <h3
+                      class="text-xl font-bold text-[#0d141b] dark:text-slate-50"
+                    >
+                      Tech Lead
+                    </h3>
+                    <span
+                      class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold uppercase tracking-wider"
+                      >Present</span
+                    >
+                  </div>
+                  <p class="text-primary font-semibold text-lg">
+                    Neurealm (formerly Gavs Technology)
+                  </p>
+                  <p class="text-[#4c739a] dark:text-slate-400 text-sm mb-4">
+                    Sep 2024 — Present • Chennai, Tamilnadu
+                  </p>
+                  <ul class="space-y-3 text-[#0d141b] dark:text-slate-300">
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Architected and led the migration of a legacy monolith
+                        to a <b>microservices architecture</b> using Node.js and
+                        Go, improving system uptime to 99.99%.</span
+                      >
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Mentored a team of 6 junior and mid-level developers,
+                        implementing <b>automated CI/CD pipelines</b> that
+                        reduced deployment time by 40%.</span
+                      >
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Optimized database performance for a 2TB PostgreSQL
+                        instance, resulting in a 30% reduction in query latency
+                        for high-traffic endpoints.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Timeline Item 2 -->
+              <div class="relative pl-14 pb-12">
+                <div
+                  class="absolute left-0 top-1 size-10 rounded-full bg-white dark:bg-slate-900 border-2 border-[#cfdbe7] dark:border-slate-700 flex items-center justify-center z-10"
+                >
+                  <span class="material-symbols-outlined text-[#4c739a] text-xl"
+                    >code</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-2"
+                  >
+                    <h3
+                      class="text-xl font-bold text-[#0d141b] dark:text-slate-50"
+                    >
+                      Staff Engineer
+                    </h3>
+                    <span
+                      class="text-[#4c739a] dark:text-slate-400 text-xs font-bold uppercase tracking-wider"
+                      >2.2 Years</span
+                    >
+                  </div>
+                  <p class="text-primary font-semibold text-lg">Altimetrik</p>
+                  <p class="text-[#4c739a] dark:text-slate-400 text-sm mb-4">
+                    July 2022 — Sep 2024 • Chennai, Tamilnadu (Remote)
+                  </p>
+                  <ul class="space-y-3 text-[#0d141b] dark:text-slate-300">
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Developed and maintained 15+ interactive web features
+                        using <b>React.js</b> and <b>Redux</b>, serving over
+                        500k monthly active users.</span
+                      >
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Built scalable RESTful APIs with Express.js and
+                        integrated third-party services including Stripe and
+                        Twilio.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Timeline Item 3 -->
+              <div class="relative pl-14 pb-12">
+                <div
+                  class="absolute left-0 top-1 size-10 rounded-full bg-white dark:bg-slate-900 border-2 border-[#cfdbe7] dark:border-slate-700 flex items-center justify-center z-10"
+                >
+                  <span class="material-symbols-outlined text-[#4c739a] text-xl"
+                    >terminal</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-2"
+                  >
+                    <h3
+                      class="text-xl font-bold text-[#0d141b] dark:text-slate-50"
+                    >
+                      Full Stack Developer
+                    </h3>
+                    <span
+                      class="text-[#4c739a] dark:text-slate-400 text-xs font-bold uppercase tracking-wider"
+                      >2 Years</span
+                    >
+                  </div>
+                  <p class="text-primary font-semibold text-lg">
+                    Nityo Infotech
+                  </p>
+                  <p class="text-[#4c739a] dark:text-slate-400 text-sm mb-4">
+                    July 2020 — July 2022 • Chennai, Tamilnadu
+                  </p>
+                  <ul class="space-y-3 text-[#0d141b] dark:text-slate-300">
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Converted Figma designs into pixel-perfect, responsive
+                        HTML/CSS/JS components.</span
+                      >
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Reduced front-end bundle sizes by 25% through
+                        lazy-loading and code-splitting techniques.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Timeline Item 4 -->
+              <div class="relative pl-14 pb-12">
+                <div
+                  class="absolute left-0 top-1 size-10 rounded-full bg-white dark:bg-slate-900 border-2 border-[#cfdbe7] dark:border-slate-700 flex items-center justify-center z-10"
+                >
+                  <span class="material-symbols-outlined text-[#4c739a] text-xl"
+                    >directions_run</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-2"
+                  >
+                    <h3
+                      class="text-xl font-bold text-[#0d141b] dark:text-slate-50"
+                    >
+                      Associate
+                    </h3>
+                    <span
+                      class="text-[#4c739a] dark:text-slate-400 text-xs font-bold uppercase tracking-wider"
+                      >1.3 Years</span
+                    >
+                  </div>
+                  <p class="text-primary font-semibold text-lg">Cognizant</p>
+                  <p class="text-[#4c739a] dark:text-slate-400 text-sm mb-4">
+                    March 2019 — June 2020 • Chennai, Tamilnadu
+                  </p>
+                  <ul class="space-y-3 text-[#0d141b] dark:text-slate-300">
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Converted Figma designs into pixel-perfect, responsive
+                        HTML/CSS/JS components.</span
+                      >
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Reduced front-end bundle sizes by 25% through
+                        lazy-loading and code-splitting techniques.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Timeline Item 5 -->
+              <div class="relative pl-14">
+                <div
+                  class="absolute left-0 top-1 size-10 rounded-full bg-white dark:bg-slate-900 border-2 border-[#cfdbe7] dark:border-slate-700 flex items-center justify-center z-10"
+                >
+                  <span class="material-symbols-outlined text-[#4c739a] text-xl"
+                    >directions_walk</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="flex flex-wrap items-center justify-between gap-2"
+                  >
+                    <h3
+                      class="text-xl font-bold text-[#0d141b] dark:text-slate-50"
+                    >
+                      Software Analyst
+                    </h3>
+                    <span
+                      class="text-[#4c739a] dark:text-slate-400 text-xs font-bold uppercase tracking-wider"
+                      >3.10 Years</span
+                    >
+                  </div>
+                  <p class="text-primary font-semibold text-lg">
+                    Chain-sys India Pvt Ltd
+                  </p>
+                  <p class="text-[#4c739a] dark:text-slate-400 text-sm mb-4">
+                    May 2015 — March 2019 • Chennai, Tamilnadu
+                  </p>
+                  <ul class="space-y-3 text-[#0d141b] dark:text-slate-300">
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Converted Figma designs into pixel-perfect, responsive
+                        HTML/CSS/JS components.</span
+                      >
+                    </li>
+                    <li class="flex gap-2">
+                      <span class="text-primary">•</span>
+                      <span
+                        >Reduced front-end bundle sizes by 25% through
+                        lazy-loading and code-splitting techniques.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Technical Expertise Section -->
+      <section class="py-20 bg-primary/5 rounded-3xl my-20 px-8" id="skills">
+        <div class="text-center space-y-4 mb-16">
+          <h2 class="text-3xl font-bold tracking-tight">Technical Expertise</h2>
+          <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+            A deep dive into the technologies I use to build robust and scalable
+            digital products.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Frontend -->
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="size-12 rounded-xl bg-white dark:bg-slate-800 shadow-md flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined">web</span>
+              </div>
+              <h3 class="text-xl font-bold">Frontend Dev</h3>
+            </div>
+            <ul class="space-y-3">
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> Angular /
+                React
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> AG Grid /
+                PrimeNG
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span>
+                TypeScript / JS (ES6+)
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> Tailwind
+                CSS / Bootstrap
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> State
+                Management (Redux/Zustand)
+              </li>
+            </ul>
+          </div>
+          <!-- Backend -->
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="size-12 rounded-xl bg-white dark:bg-slate-800 shadow-md flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined">database</span>
+              </div>
+              <h3 class="text-xl font-bold">Backend &amp; API</h3>
+            </div>
+            <ul class="space-y-3">
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> Java /
+                Spring Boot / Hibernate
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> Node.js /
+                Express
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span>
+                Microservices / RESTful APIs
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span>
+                Apache Kafka
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span>
+                Oracle / PostgreSQL / MongoDB / Redis
+              </li>
+            </ul>
+          </div>
+          <!-- Infrastructure -->
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="size-12 rounded-xl bg-white dark:bg-slate-800 shadow-md flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined">cloud</span>
+              </div>
+              <h3 class="text-xl font-bold">Cloud &amp; DevOps</h3>
+            </div>
+            <ul class="space-y-3">
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> AWS (S3,
+                Lambda, EC2)
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> Docker
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span> CI/CD
+                (Jenkins / Code Pipeline)
+              </li>
+              <li
+                class="flex items-center gap-3 text-slate-600 dark:text-slate-400"
+              >
+                <span class="size-1.5 rounded-full bg-primary"></span>
+                Infrastructure as Code (CDK)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="pb-32" id="contact">
+        <div
+          class="relative overflow-hidden bg-[#0d141b] rounded-[2rem] p-8 md:p-16 flex flex-col items-center text-center gap-8"
+        >
+          <!-- Abstract Background Elements -->
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -mr-32 -mt-32"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -ml-32 -mb-32"
+          ></div>
+          <h2
+            class="text-3xl md:text-5xl font-bold text-white max-w-2xl leading-tight"
+          >
+            Interested in starting a project together?
+          </h2>
+          <p class="text-slate-400 max-w-xl text-lg">
+            I'm currently accepting new projects and consulting engagements.
+            Let's discuss how I can help you build something amazing.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 w-full justify-center mt-4"
+          >
+            <button
+              class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-primary/30"
+            >
+              Get In Touch
+            </button>
+            <button
+              class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg transition-all"
+            >
+              Book a Discovery Call
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark py-12"
+    >
+      <div class="max-w-[1200px] mx-auto px-6 lg:px-10">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white p-1.5 rounded-lg flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined text-xl">terminal</span>
+            </div>
+            <h2 class="text-lg font-bold tracking-tight">Balakumar.Dev</h2>
+          </div>
+          <div class="flex items-center gap-8">
+            <a
+              class="text-slate-500 hover:text-primary transition-colors font-medium"
+              href="https://www.linkedin.com/in/balakumar-karunanithi-93733596/"
+              >LinkedIn</a
+            >
+            <a
+              class="text-slate-500 hover:text-primary transition-colors font-medium"
+              href="https://github.com/bkfsdcloud"
+              >GitHub</a
+            >
+          </div>
+          <p class="text-slate-400 text-sm">
+            © 2026 Balakumar Dev. Built with passion &amp; precision.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
